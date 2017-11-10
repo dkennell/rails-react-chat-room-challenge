@@ -4,4 +4,6 @@ class ChatRoomsController < ApplicationController
     @chat_rooms = ChatRoomDecorator.decorate_collection(ChatRoom.all)
   end
 
+  
+
 end
