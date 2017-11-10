@@ -9,3 +9,5 @@ class ChatRoomDecorator < Draper::Decorator
     object.created_at.strftime("%d/%m/%Y")
   end
 end
+
+#boop! Start day two!
