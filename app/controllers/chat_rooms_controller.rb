@@ -1,6 +1,7 @@
 class ChatRoomsController < ApplicationController
 
   def index
+  	binding.pry
     @chat_rooms = ChatRoomDecorator.decorate_collection(ChatRoom.all)
   end
 
