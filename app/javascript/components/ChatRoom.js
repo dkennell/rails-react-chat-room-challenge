@@ -1,4 +1,8 @@
+import React from 'react';
+import MessageList from './MessageList'
+
 class ChatRoom extends React.Component {
+	debugger;
   constructor(props) {
     super(props);
     this.state = {
@@ -68,3 +72,5 @@ render() {
 }
 
 }
+
+export default ChatRoom

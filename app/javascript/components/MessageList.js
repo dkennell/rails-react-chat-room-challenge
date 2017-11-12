@@ -1,15 +1,28 @@
+import React from 'react';
+
 class MessageList extends React.Component {
-render(){
-return (
-{ this.messagesList() }
-)
-}
+
 messagesList(){
 const { messages } = this.props
-return messages.map((message, index) =>
+debugger;
+return (
+<div>
+(messages.map((message, index) =>
 
-{ message.user.full_name } at { message.written_at } says
-{ message.body }
+<p>{ message.user.full_name } at { message.written_at } says { message.body }</p>
+)
+</div>
 );
 }
+
+render(){
+return (
+	<div>
+{ this.messagesList() }
+</div>
+)
 }
+
+}
+
+export default MessageList
