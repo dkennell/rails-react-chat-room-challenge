@@ -10,4 +10,4 @@ class ChatRoomDecorator < Draper::Decorator
   end
 end
 
-# Donesies for day two!
+# Day three start
