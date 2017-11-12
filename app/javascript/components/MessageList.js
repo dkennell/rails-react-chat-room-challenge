@@ -4,7 +4,7 @@ class MessageList extends React.Component {
 
 messagesList(){
 const { messages } = this.props
-debugger;
+debugger
 return (
 <div>
 (messages.map((message, index) =>

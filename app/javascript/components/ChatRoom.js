@@ -7,7 +7,7 @@ class ChatRoom extends React.Component {
     super(props);
     this.state = {
     	// should this be 'messages'?
-      messages: props.chat_room.message,
+      messages: this.props.chat_room.messages,
       errors: []
     };
 
@@ -60,7 +60,7 @@ form(){
 }
 
 render() {
-	const { messages } = this.state;
+		const  messages  = this.props.chat_room.messages;
 		return (
 			<div className="row">
 				<div className="col-sm-12">
